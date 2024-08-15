@@ -28,9 +28,10 @@
   .table {
       width: 70%; 
       float: right;
-      margin: 0 3px  0; 
+      margin: 0 4px  0; 
       position: relative;
-      top: 5px;
+      top: 6px;
+      right:294px;
       
   }
   
@@ -49,9 +50,8 @@
 
     .table2 {
         width: 7%;
-       
-        top: 5px;
-        
+        position: relative;
+        top: 6px;
     }
     .td2 {
         text-align: center;
