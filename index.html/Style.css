@@ -44,6 +44,16 @@
     td {
       text-align: right;
     }
+
+    .table2 {
+        width: 7%;
+        position: relative;
+        top: 5px;
+        
+    }
+    .td2 {
+        text-align: center;
+    }
     
   tr  {
       height: 100px;
