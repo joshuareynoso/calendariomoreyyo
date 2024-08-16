@@ -13,13 +13,20 @@
     </style>
 </head>
 <body>
-    <label for="opciones"></label>
-    <select id="opciones" name="opciones">
-        <option value="opcion1">Enero</option>
-        <option value="opcion2">Febrero</option>
-        <option value="opcion3">Marzo</option>
+    <script>
+        function cambiarPagina() {
+            var pagina = document.getElementById("PaginaSelect").value;
+            if (pagina) {
+                window.location.href = pagina;
+            }
+        }
+    </script> 
+    <select id="PaginaSelect" onchange="cambiarPagina()">
+        <option value="pagina1.html">Enero</option>
+        <option value="pagina1.html">Febrero</option>
+        <option value="pagina1.html">Marzo</option>
         <option value="opcion4">Abril</option>
-         <option value="opcion4">Mayo</option>
+        <option value="opcion4">Mayo</option>
         <option value="opcion1">Junio</option>
         <option value="opcion2">Julio</option>
         <option value="opcion3">Agosto</option>
@@ -28,5 +35,6 @@
         <option value="opcion2">Nobiembre</option>
         <option value="opcion3">Diciembre</option>
     </select>
+   
 </body>
 </html>
