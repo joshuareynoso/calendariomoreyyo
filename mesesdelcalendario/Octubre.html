@@ -1,0 +1,36 @@
+function cambiarUrl(mes) {
+    const urls = {
+        "Enero": "",
+        "Febrero": "https://ejemplo.com/febrero",
+        "Marzo": "https://ejemplo.com/marzo",
+        "Abril": "https://ejemplo.com/abril",
+        "Mayo": "https://ejemplo.com/mayo",
+        "Junio": "https://ejemplo.com/junio",
+        "Julio": "https://ejemplo.com/julio",
+        "Agosto": "https://ejemplo.com/agosto",
+        "Septiembre": "https://ejemplo.com/septiembre",
+        "Octubre": "https://ejemplo.com/octubre",
+        "Noviembre": "https://ejemplo.com/noviembre",
+        "Diciembre": "https://ejemplo.com/diciembre"
+    };
+    window.location.href = urls[mes];
+}
+</script>
+</head>
+<body>
+<label for="meses">Selecciona un mes:</label>
+<select id="meses" onchange="cambiarUrl(this.value)">
+<option disabled selected>-- Selecciona un mes --</option>
+<option>Enero</option>
+<option>Febrero</option>
+<option>Marzo</option>
+<option>Abril</option>
+<option>Mayo</option>
+<option>Junio</option>
+<option>Julio</option>
+<option>Agosto</option>
+<option>Septiembre</option>
+<option>Octubre</option>
+<option>Noviembre</option>
+<option>Diciembre</option>
+</select>
